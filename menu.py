@@ -105,33 +105,69 @@ def iniciar():
           
         
         elif opcion == '6':
+            print(colored(Fore.LIGHTGREEN_EX+"Base de un rectángulo".center(42)))
+
+            # primer punto
             punto1_x = int(input("Ingrese la coordenada X del primer punto: "))
             punto1_y = int(input("Ingrese la coordenada Y del primer punto: "))
+            punto1=ej2.Punto(punto1_x, punto1_y)
+            print(ej2.Punto.__str__(punto1))
+
+            # segundo punto
             punto2_x = int(input("Ingrese la coordenada X del segundo punto: "))
             punto2_y = int(input("Ingrese la coordenada Y del segundo punto: "))
-            punto1=ej2.Punto(punto1_x, punto1_y)
             punto2=ej2.Punto(punto2_x, punto2_y)
+            print(ej2.Punto.__str__(punto2))
+
+            # rectángulo
             rectangulo1=ej2.Rectangulo(punto1, punto2)
+
+            # base
             print(ej2.Rectangulo.base(rectangulo1))
+
+            print(colored(Fore.LIGHTGREEN_EX+"Base obtenida con éxito".center(42)))
         
         elif opcion == '7':
+            print(colored(Fore.LIGHTGREEN_EX+"Altura de un rectángulo".center(42)))
+
+            # primer punto
             punto1_x = int(input("Ingrese la coordenada X del primer punto: "))
             punto1_y = int(input("Ingrese la coordenada Y del primer punto: "))
+            punto1=ej2.Punto(punto1_x, punto1_y)
+            print(ej2.Punto.__str__(punto1))
+
+            # segundo punto
             punto2_x = int(input("Ingrese la coordenada X del segundo punto: "))
             punto2_y = int(input("Ingrese la coordenada Y del segundo punto: "))
-            punto1=ej2.Punto(punto1_x, punto1_y)
             punto2=ej2.Punto(punto2_x, punto2_y)
+            print(ej2.Punto.__str__(punto2))
+
+            # rectángulo
             rectangulo1=ej2.Rectangulo(punto1, punto2)
+
+            # altura
             print(ej2.Rectangulo.altura(rectangulo1))
+
+            print(colored(Fore.LIGHTGREEN_EX+"Altura obtenida con éxito".center(42)))
         
         elif opcion == '8':
+            print(colored(Fore.LIGHTGREEN_EX+"Área de un rectángulo".center(42)))
+
+            # primer punto
             punto1_x = int(input("Ingrese la coordenada X del primer punto: "))
             punto1_y = int(input("Ingrese la coordenada Y del primer punto: "))
+            punto1=ej2.Punto(punto1_x, punto1_y)
+            print(ej2.Punto.__str__(punto1))
+
+            # segundo punto
             punto2_x = int(input("Ingrese la coordenada X del segundo punto: "))
             punto2_y = int(input("Ingrese la coordenada Y del segundo punto: "))
-            punto1=ej2.Punto(punto1_x, punto1_y)
             punto2=ej2.Punto(punto2_x, punto2_y)
+
+            # rectángulo
             rectangulo1=ej2.Rectangulo(punto1, punto2)
+
+            # área
             print(ej2.Rectangulo.area(rectangulo1))
         
         if opcion == '9':

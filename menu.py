@@ -51,7 +51,46 @@ def iniciar():
             return ej2.Punto.vector(punto1, punto2)
         
         elif opcion == '4':
-            
+            punto1_x = int(input("Ingrese la coordenada X del primer punto: "))
+            punto1_y = int(input("Ingrese la coordenada Y del primer punto: "))
+            punto2_x = int(input("Ingrese la coordenada X del segundo punto: "))
+            punto2_y = int(input("Ingrese la coordenada Y del segundo punto: "))
+            punto1=ej2.Punto(punto1_x, punto1_y)
+            punto2=ej2.Punto(punto2_x, punto2_y)
+            return ej2.Punto.distancia(punto1, punto2)
+        
+        elif opcion == '5':
+            punto1_x = int(input("Ingrese la coordenada X del primer punto: "))
+            punto1_y = int(input("Ingrese la coordenada Y del primer punto: "))
+            punto2_x = int(input("Ingrese la coordenada X del segundo punto: "))
+            punto2_y = int(input("Ingrese la coordenada Y del segundo punto: "))
+            punto1=ej2.Punto(punto1_x, punto1_y)
+            punto2=ej2.Punto(punto2_x, punto2_y)
+            rectangulo1=ej2.Rectangulo(punto1, punto2)
+            return ej2.Rectangulo.__str__(rectangulo1)
+        
+        elif opcion == '6':
+            punto1_x = int(input("Ingrese la coordenada X del primer punto: "))
+            punto1_y = int(input("Ingrese la coordenada Y del primer punto: "))
+            punto2_x = int(input("Ingrese la coordenada X del segundo punto: "))
+            punto2_y = int(input("Ingrese la coordenada Y del segundo punto: "))
+            punto1=ej2.Punto(punto1_x, punto1_y)
+            punto2=ej2.Punto(punto2_x, punto2_y)
+            rectangulo1=ej2.Rectangulo(punto1, punto2)
+            return ej2.Rectangulo.base(rectangulo1)
+        
+        elif opcion == '7':
+            punto1_x = int(input("Ingrese la coordenada X del primer punto: "))
+            punto1_y = int(input("Ingrese la coordenada Y del primer punto: "))
+            punto2_x = int(input("Ingrese la coordenada X del segundo punto: "))
+            punto2_y = int(input("Ingrese la coordenada Y del segundo punto: "))
+            punto1=ej2.Punto(punto1_x, punto1_y)
+            punto2=ej2.Punto(punto2_x, punto2_y)
+            rectangulo1=ej2.Rectangulo(punto1, punto2)
+            return ej2.Rectangulo.altura(rectangulo1)
+        
+        
+
 
 
 

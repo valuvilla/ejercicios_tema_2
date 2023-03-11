@@ -176,6 +176,6 @@ def iniciar():
             print(Back.MAGENTA+"SALIENDO\n")
             break
 
-        input(colored(Fore.LIGHTMAGENTA_EX+"Presione ENTER para continuar"))
+        input(colored(Fore.LIGHTMAGENTA_EX+"Presione ENTER para continuar".center(42))
 
 iniciar()

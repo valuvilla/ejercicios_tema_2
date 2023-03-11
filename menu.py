@@ -33,7 +33,6 @@ def iniciar():
             input_x = int(input("Ingrese la coordenada X: "))
             input_y = int(input("Ingrese la coordenada Y: "))
             punto = ej2.Punto(input_x, input_y)
-            print(f"El punto creado es: {punto}")
 
 
         if opcion == '9':

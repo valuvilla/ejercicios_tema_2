@@ -35,7 +35,7 @@ def iniciar():
             input_x = int(input("Ingrese la coordenada X: "))
             input_y = int(input("Ingrese la coordenada Y: "))
             punto1=ej2.Punto(input_x, input_y)
-            print(ej2.Punto.__str__(punto1))
+            print(colored(Fore.LIGHTBLUE_EX+f'{ej2.Punto.__str__(punto1)}'.center(42)))
             print(colored(Fore.LIGHTGREEN_EX+"Punto creado con éxito".center(42)))
         
         elif opcion == '2':
@@ -43,6 +43,7 @@ def iniciar():
             input_x = int(input("Ingrese la coordenada X: "))
             input_y = int(input("Ingrese la coordenada Y: "))
             punto1=ej2.Punto(input_x, input_y)
+            print(colored(Fore.LIGHTBLUE_EX+f'{ej2.Punto.__str__(punto1)}'.center(42)))
             print(ej2.Punto.cuadrante(punto1))
             print(colored(Fore.LIGHTGREEN_EX+"Cuadrante obtenido con éxito".center(42)))
         
@@ -52,13 +53,13 @@ def iniciar():
             punto1_x = int(input("Ingrese la coordenada X del primer punto: "))
             punto1_y = int(input("Ingrese la coordenada Y del primer punto: "))
             punto1=ej2.Punto(punto1_x, punto1_y)
-            print(ej2.Punto.__str__(punto1))
+            print(colored(Fore.LIGHTBLUE_EX+f'{ej2.Punto.__str__(punto1)}'.center(42)))
 
             # segundo punto
             punto2_x = int(input("Ingrese la coordenada X del segundo punto: "))
             punto2_y = int(input("Ingrese la coordenada Y del segundo punto: "))
             punto2=ej2.Punto(punto2_x, punto2_y)
-            print(ej2.Punto.__str__(punto2))
+            print(colored(Fore.LIGHTBLUE_EX+f'{ej2.Punto.__str__(punto2)}'.center(42)))
 
             # vector
             print(ej2.Punto.vector(punto1, punto2))
@@ -71,13 +72,13 @@ def iniciar():
             punto1_x = int(input("Ingrese la coordenada X del primer punto: "))
             punto1_y = int(input("Ingrese la coordenada Y del primer punto: "))
             punto1=ej2.Punto(punto1_x, punto1_y)
-            print(ej2.Punto.__str__(punto1))
+            print(colored(Fore.LIGHTBLUE_EX+f'{ej2.Punto.__str__(punto1)}'.center(42)))
 
             # segundo punto
             punto2_x = int(input("Ingrese la coordenada X del segundo punto: "))
             punto2_y = int(input("Ingrese la coordenada Y del segundo punto: "))
             punto2=ej2.Punto(punto2_x, punto2_y)
-            print(ej2.Punto.__str__(punto2))
+            print(colored(Fore.LIGHTBLUE_EX+f'{ej2.Punto.__str__(punto2)}'.center(42)))
 
             # distancia
             print(ej2.Punto.distancia(punto1, punto2))
@@ -90,14 +91,14 @@ def iniciar():
             punto1_x = int(input("Ingrese la coordenada X del primer punto: "))
             punto1_y = int(input("Ingrese la coordenada Y del primer punto: "))
             punto1=ej2.Punto(punto1_x, punto1_y)
-            print(ej2.Punto.__str__(punto1))
+            print(colored(Fore.LIGHTBLUE_EX+f'{ej2.Punto.__str__(punto1)}'.center(42)))
 
 
             # segundo punto
             punto2_x = int(input("Ingrese la coordenada X del segundo punto: "))
             punto2_y = int(input("Ingrese la coordenada Y del segundo punto: "))
             punto2=ej2.Punto(punto2_x, punto2_y)
-            print(ej2.Punto.__str__(punto2))
+            print(colored(Fore.LIGHTBLUE_EX+f'{ej2.Punto.__str__(punto2)}'.center(42)))
 
             # rectángulo
             rectangulo1=ej2.Rectangulo(punto1, punto2)
@@ -111,13 +112,13 @@ def iniciar():
             punto1_x = int(input("Ingrese la coordenada X del primer punto: "))
             punto1_y = int(input("Ingrese la coordenada Y del primer punto: "))
             punto1=ej2.Punto(punto1_x, punto1_y)
-            print(ej2.Punto.__str__(punto1))
+            print(colored(Fore.LIGHTBLUE_EX+f'{ej2.Punto.__str__(punto1)}'.center(42)))
 
             # segundo punto
             punto2_x = int(input("Ingrese la coordenada X del segundo punto: "))
             punto2_y = int(input("Ingrese la coordenada Y del segundo punto: "))
             punto2=ej2.Punto(punto2_x, punto2_y)
-            print(ej2.Punto.__str__(punto2))
+            print(colored(Fore.LIGHTBLUE_EX+f'{ej2.Punto.__str__(punto2)}'.center(42)))
 
             # rectángulo
             rectangulo1=ej2.Rectangulo(punto1, punto2)
@@ -134,13 +135,13 @@ def iniciar():
             punto1_x = int(input("Ingrese la coordenada X del primer punto: "))
             punto1_y = int(input("Ingrese la coordenada Y del primer punto: "))
             punto1=ej2.Punto(punto1_x, punto1_y)
-            print(ej2.Punto.__str__(punto1))
+            print(colored(Fore.LIGHTBLUE_EX+f'{ej2.Punto.__str__(punto1)}'.center(42)))
 
             # segundo punto
             punto2_x = int(input("Ingrese la coordenada X del segundo punto: "))
             punto2_y = int(input("Ingrese la coordenada Y del segundo punto: "))
             punto2=ej2.Punto(punto2_x, punto2_y)
-            print(ej2.Punto.__str__(punto2))
+            print(colored(Fore.LIGHTBLUE_EX+f'{ej2.Punto.__str__(punto2)}'.center(42)))
 
             # rectángulo
             rectangulo1=ej2.Rectangulo(punto1, punto2)
@@ -157,12 +158,13 @@ def iniciar():
             punto1_x = int(input("Ingrese la coordenada X del primer punto: "))
             punto1_y = int(input("Ingrese la coordenada Y del primer punto: "))
             punto1=ej2.Punto(punto1_x, punto1_y)
-            print(ej2.Punto.__str__(punto1))
-
+            print(colored(Fore.LIGHTBLUE_EX+f'{ej2.Punto.__str__(punto1)}'.center(42)))
+            
             # segundo punto
             punto2_x = int(input("Ingrese la coordenada X del segundo punto: "))
             punto2_y = int(input("Ingrese la coordenada Y del segundo punto: "))
             punto2=ej2.Punto(punto2_x, punto2_y)
+            print(colored(Fore.LIGHTBLUE_EX+f'{ej2.Punto.__str__(punto2)}'.center(42)))
 
             # rectángulo
             rectangulo1=ej2.Rectangulo(punto1, punto2)

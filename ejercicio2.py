@@ -35,11 +35,7 @@ class Punto:
         return(f"El vector entre los puntos es ({punto.x - self.x}, {punto.y - self.y})")
 
     def distancia(self, punto):
-        punto1=Punto(self.x, self.y)
-        punto2=Punto(punto.x, punto.y)
-        distancia = math.sqrt((punto2.x - punto1.x)**2 + (punto2.y - punto1.y)**2)
-        return((distancia))
-        return(type(distancia))
+        return(f"La distancia entre los puntos es {math.sqrt((punto.x - self.x)**2 + (punto.y - self.y)**2)} unidades")
         
 
 # Crea una clase llamada Rectangulo con dos puntos (inicial y final) que formarán la diagonal del rectángulo.
@@ -53,40 +49,40 @@ class Rectangulo:
         self.punto2 = punto2
 
     def base(self):
-        return(f"La base del rectángulo es {abs(self.punto2.x - self.punto1.x)}")
+        return(f"La base del rectángulo es {abs(self.punto2.x - self.punto1.x)} unidades")
 
     def altura(self):
-        return(f"La altura del rectángulo es {abs(self.punto2.y - self.punto1.y)}")
+        return(f"La altura del rectángulo es {abs(self.punto2.y - self.punto1.y)} unidades")
 
     def area(self):
-        return(f"El área del rectángulo es {abs(self.punto2.x - self.punto1.x) * abs(self.punto2.y - self.punto1.y)}")
+        return(f"El área del rectángulo es {abs(self.punto2.x - self.punto1.x) * abs(self.punto2.y - self.punto1.y)} unidades cuadradas")
 
     
 # Experimentación
 if __name__ == "__main__":
     # Crea los puntos A(2, 3), B(5,5), C(-3, -1) y D(0,0) e imprimelos por pantalla
     A=Punto(2,3)
-    A.__str__()
+    print(A.__str__())
     B=Punto(5,5)
-    B.__str__()
+    print(B.__str__())
     C=Punto(-3,-1)
-    C.__str__()
+    print(C.__str__())
     D=Punto(0,0)
-    D.__str__()
+    print(D.__str__())
 
     # Consulta a que cuadrante pertenecen el punto A, C y D
-    A.cuadrante()
-    C.cuadrante()
-    D.cuadrante()
+    print(A.cuadrante())
+    print(C.cuadrante())
+    print(D.cuadrante())
 
 
     # Consulta los vectores AB y BA
-    A.vector(B)
-    B.vector(A)
+    print(A.vector(B))
+    print(B.vector(A))
 
     # Consulta la distancia entre los puntos 'A y B' y 'B y A'
-    A.distancia(B)
-    B.distancia(A)
+    print(A.distancia(B))
+    print(B.distancia(A))
 
     # Determina cual de los 3 puntos A, B o C, se encuentra más lejos del origen, punto (0,0)
 
@@ -94,9 +90,9 @@ if __name__ == "__main__":
     rectangulo=Rectangulo(A,B)
 
     # Consulta la base, altura y área del rectángulo
-    rectangulo.base()
-    rectangulo.altura()
-    rectangulo.area()
+    print(rectangulo.base())
+    print(rectangulo.altura())
+    print(rectangulo.area())
 
 
 

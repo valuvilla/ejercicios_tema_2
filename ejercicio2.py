@@ -12,34 +12,34 @@ class Punto:
         self.y = y
     
     def __str__(self):
-        print(f"El punto creado es ({self.x}, {self.y})")
+        return(f"El punto creado es ({self.x}, {self.y})")
 
     def cuadrante(self):
         if self.x == 0 and self.y == 0:
-            print("El punto se encuentra en el origen")
+            return("El punto se encuentra en el origen")
         elif self.x == 0:
-            print("El punto se encuentra sobre el eje Y")
+            return("El punto se encuentra sobre el eje Y")
         elif self.y == 0:
-            print("El punto se encuentra sobre el eje X")
+            return("El punto se encuentra sobre el eje X")
         elif self.x > 0 and self.y > 0:
-            print("El punto se encuentra en el primer cuadrante")
+            return("El punto se encuentra en el primer cuadrante")
         elif self.x < 0 and self.y > 0:
-            print("El punto se encuentra en el segundo cuadrante")
+            return("El punto se encuentra en el segundo cuadrante")
         elif self.x < 0 and self.y < 0:
-            print("El punto se encuentra en el tercer cuadrante")
+            return("El punto se encuentra en el tercer cuadrante")
         elif self.x > 0 and self.y < 0:
-            print("El punto se encuentra en el cuarto cuadrante")
+            return("El punto se encuentra en el cuarto cuadrante")
 
     def vector(self, punto):
         
-        print(f"El vector entre los puntos es ({punto.x - self.x}, {punto.y - self.y})")
+        return(f"El vector entre los puntos es ({punto.x - self.x}, {punto.y - self.y})")
 
     def distancia(self, punto):
         punto1=Punto(self.x, self.y)
         punto2=Punto(punto.x, punto.y)
         distancia = math.sqrt((punto2.x - punto1.x)**2 + (punto2.y - punto1.y)**2)
-        print((distancia))
-        print(type(distancia))
+        return((distancia))
+        return(type(distancia))
         
 
 # Crea una clase llamada Rectangulo con dos puntos (inicial y final) que formarán la diagonal del rectángulo.
@@ -53,13 +53,13 @@ class Rectangulo:
         self.punto2 = punto2
 
     def base(self):
-        print(f"La base del rectángulo es {abs(self.punto2.x - self.punto1.x)}")
+        return(f"La base del rectángulo es {abs(self.punto2.x - self.punto1.x)}")
 
     def altura(self):
-        print(f"La altura del rectángulo es {abs(self.punto2.y - self.punto1.y)}")
+        return(f"La altura del rectángulo es {abs(self.punto2.y - self.punto1.y)}")
 
     def area(self):
-        print(f"El área del rectángulo es {abs(self.punto2.x - self.punto1.x) * abs(self.punto2.y - self.punto1.y)}")
+        return(f"El área del rectángulo es {abs(self.punto2.x - self.punto1.x) * abs(self.punto2.y - self.punto1.y)}")
 
     
 # Experimentación

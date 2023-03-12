@@ -4,6 +4,7 @@ import ejercicio2 as ej2
 import helpers
 from colorama import *
 from termcolor import colored, cprint
+import matplotlib.pyplot as plt
 init(autoreset=True)
 
 def iniciar():
@@ -36,7 +37,12 @@ def iniciar():
             input_y = int(input("Ingrese la coordenada Y: "))
             punto1=ej2.Punto(input_x, input_y)
             print(colored(Fore.LIGHTBLUE_EX+f'{ej2.Punto.__str__(punto1)}'.center(42)))
+        
             print(colored(Fore.LIGHTGREEN_EX+"Punto creado con éxito".center(42)))
+            plt.plot(input_x,input_y,marker ="o")
+            plt.show()
+
+        
         
         elif opcion == '2':
             print(colored(Fore.LIGHTGREEN_EX+"Cuadrante de un punto".center(42)))
@@ -46,6 +52,8 @@ def iniciar():
             print(colored(Fore.LIGHTBLUE_EX+f'{ej2.Punto.__str__(punto1)}'.center(42)))
             print(ej2.Punto.cuadrante(punto1))
             print(colored(Fore.LIGHTGREEN_EX+"Cuadrante obtenido con éxito".center(42)))
+            plt.plot(input_x,input_y,marker ="o")
+            plt.show()
         
         elif opcion == '3':
             print(colored(Fore.LIGHTGREEN_EX+"Vector entre dos puntos".center(42)))
@@ -64,6 +72,8 @@ def iniciar():
             # vector
             print(ej2.Punto.vector(punto1, punto2))
             print(colored(Fore.LIGHTGREEN_EX+"Vector obtenido con éxito".center(42)))
+            plt.plot([punto1_x,punto2_x],[punto1_y, punto2_y], ":", color="blue")
+            plt.show()
         
         elif opcion == '4':
             print(colored(Fore.LIGHTGREEN_EX+"Distancia entre dos puntos".center(42)))
@@ -178,4 +188,3 @@ def iniciar():
 
         input(colored(Fore.LIGHTMAGENTA_EX+"Presione ENTER para continuar".center(42)))
 
-iniciar()

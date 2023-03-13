@@ -9,7 +9,58 @@ from termcolor import colored, cprint
 import matplotlib.pyplot as plt
 init(autoreset=True)
 
+def dibujar_rectangulo(punto1, punto2):
+    t = turtle.Turtle()
+    l=int(abs(punto2.y-punto1.y)*50) # largo para el rectángulo
+    a=int(abs(punto2.x-punto2.x)*50) # ancho para el rectángulo
+
+    t.forward(l)
+    t.left(90)
+    t.forward(a)
+    t.left(90)
+    t.forward(l)
+    t.left(90)
+    t.forward(a)
+    t.left(90)
+
+    turtle.done()
+
+def dibujar_punto(punto):
+    t = turtle.Turtle()
+    t.dot(10, 'red')
+    t.penup()
+    t.goto(punto.x, punto.y)
+    t.pendown()
+    turtle.done()
+
+def dibujar_vector(punto1, punto2):
+    t = turtle.Turtle()
+    t.penup()
+    t.goto(punto1.x, punto1.y)
+    t.pendown()
+    t.goto(punto2.x, punto2.y)
+    turtle.done()
+
+def dibujar_distancia(punto1, punto2):
+    t = turtle.Turtle()
+    t.penup()
+    t.goto(punto1.x, punto1.y)
+    t.pendown()
+    t.goto(punto2.x, punto2.y)
+    turtle.done()
+
+def dibujar_cuadrante(punto):
+    t = turtle.Turtle()
+    t.dot(10, 'red')
+    t.penup()
+    t.goto(punto.x, punto.y)
+    t.pendown()
+    turtle.done()
+
+
+
 def iniciar():
+
     while True:
         helpers.limpiar_pantalla()
 
@@ -41,8 +92,10 @@ def iniciar():
             print(colored(Fore.LIGHTBLUE_EX+f'{ej2.Punto.__str__(punto1)}'.center(42)))
         
             print(colored(Fore.LIGHTGREEN_EX+"Punto creado con éxito".center(42)))
-            plt.plot(input_x,input_y,marker ="o")
-            plt.show()
+            # plt.plot(input_x,input_y,marker ="o")
+            # plt.show()
+
+            dibujar_punto(punto1)
 
         
         
@@ -54,8 +107,9 @@ def iniciar():
             print(colored(Fore.LIGHTBLUE_EX+f'{ej2.Punto.__str__(punto1)}'.center(42)))
             print(ej2.Punto.cuadrante(punto1))
             print(colored(Fore.LIGHTGREEN_EX+"Cuadrante obtenido con éxito".center(42)))
-            plt.plot(input_x,input_y,marker ="o")
-            plt.show()
+            # plt.plot(input_x,input_y,marker ="o")
+            # plt.show()
+            dibujar_cuadrante(punto1)
         
         elif opcion == '3':
             print(colored(Fore.LIGHTGREEN_EX+"Vector entre dos puntos".center(42)))
@@ -116,20 +170,8 @@ def iniciar():
             rectangulo1=ej2.Rectangulo(punto1, punto2)
             print(colored(Fore.LIGHTGREEN_EX+"Rectángulo creado con éxito".center(42)))
             
-            # dibujar rectángulo
-            l=int(abs(punto2_y-punto1_y)*50) # largo para el rectángulo
-            a=int(abs(punto2_x-punto1_x)*50) # ancho para el rectángulo
-
-            t.forward(l)
-            t.left(90)
-            t.forward(a)
-            t.left(90)
-            t.forward(l)
-            t.left(90)
-            t.forward(a)
-            t.left(90)
-            t.done()
-        
+            
+            
         elif opcion == '6':
             print(colored(Fore.LIGHTGREEN_EX+"Base de un rectángulo".center(42)))
 

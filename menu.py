@@ -1,5 +1,7 @@
 import os
 import re
+import turtle
+t = turtle.Turtle()
 import ejercicio2 as ej2
 import helpers
 from colorama import *
@@ -113,7 +115,20 @@ def iniciar():
             # rectángulo
             rectangulo1=ej2.Rectangulo(punto1, punto2)
             print(colored(Fore.LIGHTGREEN_EX+"Rectángulo creado con éxito".center(42)))
-          
+            
+            # dibujar rectángulo
+            l=int(abs(punto2_y-punto1_y)*50) # largo para el rectángulo
+            a=int(abs(punto2_x-punto1_x)*50) # ancho para el rectángulo
+
+            t.forward(l)
+            t.left(90)
+            t.forward(a)
+            t.left(90)
+            t.forward(l)
+            t.left(90)
+            t.forward(a)
+            t.left(90)
+            t.done()
         
         elif opcion == '6':
             print(colored(Fore.LIGHTGREEN_EX+"Base de un rectángulo".center(42)))

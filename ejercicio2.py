@@ -83,8 +83,9 @@ if __name__ == "__main__":
     # Consulta la distancia entre los puntos 'A y B' y 'B y A'
     print(A.distancia(B))
     print(B.distancia(A))
-
+    
     # Determina cual de los 3 puntos A, B o C, se encuentra más lejos del origen, punto (0,0)
+    
 
     # Crea el rectángulo utilizando los puntos A y B
     rectangulo=Rectangulo(A,B)

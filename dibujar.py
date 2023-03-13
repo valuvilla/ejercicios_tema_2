@@ -10,7 +10,7 @@ y_1=2
 x_2=5
 y_2=5
 l = int(abs(y_2-y_1)*50)
-w = int(abs(x_2-x_1)*50)
+w = int(abs(x_2-punto1_x)*50)
  
 # drawing first side
 t.forward(l) # Forward turtle by l units

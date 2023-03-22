@@ -36,6 +36,14 @@ class Punto:
 
     def distancia(self, punto):
         return(f"La distancia entre los puntos es {math.sqrt((punto.x - self.x)**2 + (punto.y - self.y)**2)} unidades")
+    
+    def mas_cerca(self, punto1, punto2, punto3):
+        if self.distancia(punto1) < self.distancia(punto2) and self.distancia(punto1) < self.distancia(punto3):
+            return(f"El punto más cercano al punto {self} es {punto1}")
+        elif self.distancia(punto2) < self.distancia(punto1) and self.distancia(punto2) < self.distancia(punto3):
+            return(f"El punto más cercano al punto {self} es {punto2}")
+        elif self.distancia(punto3) < self.distancia(punto1) and self.distancia(punto3) < self.distancia(punto2):
+            return(f"El punto más cercano al punto {self} es {punto3}")
         
 
 # Crea una clase llamada Rectangulo con dos puntos (inicial y final) que formarán la diagonal del rectángulo.
@@ -85,8 +93,7 @@ if __name__ == "__main__":
     print(B.distancia(A))
     
     # Determina cual de los 3 puntos A, B o C, se encuentra más lejos del origen, punto (0,0)
-    
-
+    print(D.mas_cerca(A,B,C))
     # Crea el rectángulo utilizando los puntos A y B
     rectangulo=Rectangulo(A,B)
 

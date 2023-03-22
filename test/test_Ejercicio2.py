@@ -27,7 +27,8 @@ class TesEjercicio2(unittest.TestCase):
         punto1 = ej2.Punto(10, 100)
         punto2 = ej2.Punto(50, 7)
         punto3 = ej2.Punto(1, 1)
-        self.assertEqual(ej2.Punto.mas_cercano(punto1, punto2, punto3), f'El punto más cercano al punto (0,0) es el punto (1, 1)')
+        origen= ej2.Punto(0, 0)
+        self.assertEqual(ej2.Punto.mas_cercano(origen,punto1, punto2, punto3), f'El punto más cercano al punto (0,0) es el punto (1, 1)')
 
     
     def test_rectangulo(self):

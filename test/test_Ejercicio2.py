@@ -23,12 +23,12 @@ class TesEjercicio2(unittest.TestCase):
         punto2 = ej2.Punto(5, 5)
         self.assertEqual(ej2.Punto.distancia(punto1, punto2), f'La distancia entre los puntos es 3.605551275463989 unidades')
 
-    def test_mas_cercano(self):
+    def test_mas_cerca(self):
         punto1 = ej2.Punto(10, 100)
         punto2 = ej2.Punto(50, 7)
         punto3 = ej2.Punto(1, 1)
         origen= ej2.Punto(0, 0)
-        self.assertEqual(ej2.Punto.mas_cercano(origen,punto1, punto2, punto3), f'El punto más cercano al punto (0,0) es el punto (1, 1)')
+        self.assertEqual(ej2.Punto.mas_cerca(origen,punto1, punto2, punto3), f'El punto más cercano al punto (0,0) es (1,1)')
 
     
     def test_rectangulo(self):
